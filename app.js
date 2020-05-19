@@ -8,12 +8,15 @@ const session = require("express-session");
 const flash = require("connect-flash");
 // import mongoose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/db_lovecation", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
-});
+mongoose.connect(
+  "mongodb://Joshua:lovecation@cluster0-shard-00-00-cirm6.mongodb.net:27017,cluster0-shard-00-01-cirm6.mongodb.net:27017,cluster0-shard-00-02-cirm6.mongodb.net:27017/db_lovecation?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  }
+);
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");

@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  "mongodb://127.0.0.1:27017/db_lovecation",
+  "mongodb://Joshua:lovecation@cluster0-shard-00-00-cirm6.mongodb.net:27017,cluster0-shard-00-01-cirm6.mongodb.net:27017,cluster0-shard-00-02-cirm6.mongodb.net:27017/db_lovecation?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
