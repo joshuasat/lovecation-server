@@ -28,6 +28,7 @@ const cors = require("cors");
 var app = express();
 
 // view engine setup
+app.use(cors());
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
@@ -55,7 +56,6 @@ app.use("/users", usersRouter);
 // admin
 app.use("/admin", adminRouter);
 app.use("/api/v1/member", apiRouter);
-app.use(cors());
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
