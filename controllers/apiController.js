@@ -39,7 +39,7 @@ module.exports = {
           item.isPopular = true;
           await item.save();
           if (category[i].itemId[0] === category[i].itemId[x]) {
-            item.isPopular = false;
+            item.isPopular = true;
             await item.save();
           }
         }
