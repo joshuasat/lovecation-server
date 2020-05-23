@@ -87,7 +87,7 @@ module.exports = {
         name: "Romance Couple",
         rate: 4.55,
         content:
-          "What a great trip with my girlfriend and I should try again next time soon ...",
+          "As a husband I can pick a romantic trip for my beloved wife ... Thanks LC!",
         coupleName: "Joshia",
         coupleOccupation: "Mobile Developer",
       };
